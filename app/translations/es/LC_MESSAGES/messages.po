@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-06 01:26+0530\n"
+"POT-Creation-Date: 2021-08-06 02:34+0530\n"
 "PO-Revision-Date: 2021-08-06 01:25+0530\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:18
+msgid "Error: the translation service failed."
+msgstr ""
 
 #: app/auth/email.py:8
 msgid "[Microblog] Reset Your Password"
@@ -111,6 +119,14 @@ msgstr ""
 #: app/main/routes.py:129
 #, python-format
 msgid "You are not following %(username)s."
+msgstr ""
+
+#: app/templates/_post.html:23
+msgid "Translate"
+msgstr ""
+
+#: app/templates/base.html:66
+msgid "Error: Could not contact server."
 msgstr ""
 
 #: app/templates/messages.html:4
