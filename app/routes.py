@@ -8,12 +8,15 @@ from datetime import datetime
 from app.forms import ResetPasswordRequestForm, ResetPasswordForm
 from app.email import send_password_reset_email
 from app.forms import ResetPasswordForm
+from flask import g
+from flask_babel import get_locale
 
 @app.before_request
 def before_request():
     if current_user.is_authenticated:
         current_user.last_seen = datetime.utcnow()
         db.session.commit()
+        g.locale = str(get_locale())
 
 
 @app.route('/', methods=['GET', 'POST'])

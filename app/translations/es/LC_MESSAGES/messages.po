@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-04 13:23+0530\n"
-"PO-Revision-Date: 2021-08-04 13:22+0530\n"
+"POT-Creation-Date: 2021-08-06 01:26+0530\n"
+"PO-Revision-Date: 2021-08-06 01:25+0530\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -18,27 +18,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:18
-msgid "Please log in to access this page."
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
 msgstr ""
 
-#: app/forms.py:56
-msgid "Message"
+#: app/auth/routes.py:21
+msgid "Invalid username or password"
 msgstr ""
 
-#: app/forms.py:58
+#: app/auth/routes.py:28
+msgid "Sign In"
+msgstr ""
+
+#: app/auth/routes.py:47
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: app/auth/routes.py:49
+msgid "Register"
+msgstr ""
+
+#: app/auth/routes.py:63
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/auth/routes.py:66
+msgid "Reset Password"
+msgstr ""
+
+#: app/auth/routes.py:80
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/main/forms.py:10
+msgid "Username"
+msgstr ""
+
+#: app/main/forms.py:11
+msgid "About me"
+msgstr ""
+
+#: app/main/forms.py:13 app/main/forms.py:32
 msgid "Submit"
 msgstr ""
 
-#: app/routes.py:163
-msgid "Your message has been sent."
+#: app/main/forms.py:23
+msgid "Please use a different username."
 msgstr ""
 
-#: app/routes.py:165
-msgid "Send Message"
+#: app/main/forms.py:31
+msgid "Say something"
 msgstr ""
 
-#: app/templates/base.html:29 app/templates/messages.html:4
+#: app/main/routes.py:33
+msgid "Your post is now live!"
+msgstr ""
+
+#: app/main/routes.py:42
+msgid "Home"
+msgstr ""
+
+#: app/main/routes.py:57
+msgid "Explore"
+msgstr ""
+
+#: app/main/routes.py:86
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/main/routes.py:91
+msgid "Edit Profile"
+msgstr ""
+
+#: app/main/routes.py:102 app/main/routes.py:122
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: app/main/routes.py:105
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/main/routes.py:109
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/main/routes.py:125
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/main/routes.py:129
+#, python-format
+msgid "You are not following %(username)s."
+msgstr ""
+
+#: app/templates/messages.html:4
 msgid "Messages"
 msgstr ""
 
@@ -53,9 +128,5 @@ msgstr ""
 #: app/templates/send_message.html:5
 #, python-format
 msgid "Send Message to %(recipient)s"
-msgstr ""
-
-#: app/templates/user.html:38
-msgid "Send private message"
 msgstr ""
 
